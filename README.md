@@ -64,7 +64,7 @@ The models are trained with the input size of 520x520, and tested with original 
 Methods | Backbone | Window Size | Train Set | Test Set | Iterations | Batch Size | OHEM | mIoU | mIoU (Multi-Scale) | Log | ckpt | script |
 | :---- | :------- | :---: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |:--: |
 OCRNet | HRT-S | 7x7 | Train | Val | 60000 | 16 | Yes | 53.8 | 54.6 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj306lzvnI4s5U43l?e=J9mCfg) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkADkevlhIuUrPC1T?e=hcDx5S) | [script](./seg/scripts/pascal_context/hrt/run_hrt_small_ocr_v2_ohem.sh) |
-OCRNet | HRT-B | 7x7 | Train | Val | 60000 | 16 | Yes | 52.3 | 53.1 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3_0tiJZqL7HWPv1?e=6ilX0Z) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAMUzRnCGmAxEehJ?e=HrCQ9c) |[script](./seg/scripts/pascal_context/hrt/run_hrt_base_ocr_v2_ohem.sh) |
+OCRNet | HRT-B | 7x7 | Train | Val | 60000 | 16 | Yes | 56.3 | 57.1 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3_0tiJZqL7HWPv1?e=6ilX0Z) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAMUzRnCGmAxEehJ?e=HrCQ9c) |[script](./seg/scripts/pascal_context/hrt/run_hrt_base_ocr_v2_ohem.sh) |
 OCRNet | HRT-B | 15x15 | Train | Val | 60000 | 16 | Yes | 57.6 | 58.5 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3kphBj2FusLylDg?e=qZSrpp) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAIBAkrOlPp_T1YT?e=DeHMdo)|[script](./seg/scripts/pascal_context/hrt/run_hrt_base_ocr_v2_ohem_w15.sh) | 
 
 ### COCO-Stuff
