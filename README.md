@@ -12,7 +12,7 @@ This is the official implementation of [High-Resolution Transformer (HRT)](). We
 ## Classification
 
 
-### Results on ImageNet-1K
+#### Results on ImageNet-1K
 
 | Backbone | acc@1 | acc@5 | #params | FLOPs | ckpt | log | script |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
@@ -48,7 +48,7 @@ The models are first pre-trained on ImageNet-1K dataset, and then fine-tuned on 
 ## Semantic segmentation
 
 
-### Cityscapes
+#### Cityscapes
 Performance on the Cityscapes dataset. The models are trained and tested with input size of 512x1024 and 1024x2048 respectively. 
 
 Methods | Backbone | Window Size | Train Set | Test Set | Iterations | Batch Size | OHEM | mIoU | mIoU (Multi-Scale) | Log | ckpt | script |
@@ -57,7 +57,7 @@ OCRNet | HRT-S | 7x7 | Train | Val | 80000 | 8 | Yes | 80.0 | 81.0 | [log](https
 OCRNet | HRT-B | 7x7 | Train | Val | 80000 | 8 | Yes | 81.4 | 82.0 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3NtH1LBB0w6yCO3?e=p4v29Z) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj3zEMdYLM8nZ5gXN?e=v7ehnB) |[script](./seg/scripts/cityscapes/hrt/run_hrt_base_ocr_v2_ohem.sh) |
 OCRNet | HRT-B | 15x15 | Train | Val | 80000 | 8 | Yes | 81.9 | 82.6 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwkAlyBb4tGcxSjF_A?e=diIDCV) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAp3LjwI-7Csmh0K?e=K1zXrn)|[script](./seg/scripts/cityscapes/hrt/run_hrt_base_ocr_v2_ohem_w15.sh) | 
 
-### PASCAL-Context
+#### PASCAL-Context
 
 The models are trained with the input size of 520x520, and tested with original size.
 
@@ -67,7 +67,7 @@ OCRNet | HRT-S | 7x7 | Train | Val | 60000 | 16 | Yes | 53.8 | 54.6 | [log](http
 OCRNet | HRT-B | 7x7 | Train | Val | 60000 | 16 | Yes | 56.3 | 57.1 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3_0tiJZqL7HWPv1?e=6ilX0Z) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAMUzRnCGmAxEehJ?e=HrCQ9c) |[script](./seg/scripts/pascal_context/hrt/run_hrt_base_ocr_v2_ohem.sh) |
 OCRNet | HRT-B | 15x15 | Train | Val | 60000 | 16 | Yes | 57.6 | 58.5 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3kphBj2FusLylDg?e=qZSrpp) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAIBAkrOlPp_T1YT?e=DeHMdo)|[script](./seg/scripts/pascal_context/hrt/run_hrt_base_ocr_v2_ohem_w15.sh) | 
 
-### COCO-Stuff
+#### COCO-Stuff
 
 The models are trained with input size of 520x520, and tested with original size.
 
@@ -77,7 +77,7 @@ OCRNet | HRT-S | 7x7 | Train | Val | 60000 | 16 | Yes | 37.9 | 38.9 | [log](http
 OCRNet | HRT-B | 7x7 | Train | Val | 60000 | 16 | Yes | 41.6 | 42.5 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3iKM2xyDk-6jnJd?e=HL5s7d) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwkAFAYKZm2wL9C6KL?e=AZiXLK) |[script](./seg/scripts/coco_stuff/hrt/run_hrt_base_ocr_v2_ohem.sh) |
 OCRNet | HRT-B | 15x15 | Train | Val | 60000 | 16 | Yes | 42.4 | 43.3 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj3RtsUasPSb4nhL_?e=WUBe74) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj37Np48Gpb-Pjowu?e=iwL5UA)|[script](./seg/scripts/coco_stuff/hrt/run_hrt_base_ocr_v2_ohem_w15.sh) |  
 
-### ADE20K
+#### ADE20K
 
 The models are trained with input size of 520x520, and tested with original size. The results with window size 15x15 will be updated latter.
 
