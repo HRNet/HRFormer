@@ -1,0 +1,11 @@
+MODEL:
+  TYPE: pvt_v2
+  NAME: pvt_v2_b1_patch16_224
+  PVT:
+    DROP_PATH_RATE: 0.1
+    PATCH_SIZE: 16
+    EMBED_DIMS: [64, 128, 320, 512]
+    NUM_HEADS: [1, 2, 5, 8]
+    MLP_RATIOS: [8, 8, 4, 4]
+    DEPTHS: [2, 2, 2, 2]
+    SR_RATIOS: [8, 4, 2, 1]

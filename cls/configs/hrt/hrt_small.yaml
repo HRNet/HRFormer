@@ -1,0 +1,62 @@
+AMP_OPT_LEVEL: O1
+MODEL:
+  TYPE: hrt
+  NAME: hrt_small
+  HRT:
+    DROP_PATH_RATE: 0.
+    STAGE1:
+      NUM_MODULES: 1
+      NUM_BRANCHES: 1
+      NUM_BLOCKS: [2]
+      NUM_CHANNELS: [64]
+      NUM_HEADS: [2]
+      NUM_MLP_RATIOS: [4]
+      NUM_RESOLUTIONS: [[56, 56]]
+      BLOCK: 'BOTTLENECK'
+
+    STAGE2:
+      NUM_MODULES: 1
+      NUM_BRANCHES: 2
+      NUM_BLOCKS: [2, 2]
+      NUM_CHANNELS: [32, 64]
+      NUM_HEADS: [1, 2]
+      NUM_MLP_RATIOS: [4, 4]
+      NUM_RESOLUTIONS: [[56, 56], [28, 28]]
+      NUM_WINDOW_SIZES: [7, 7]
+      ATTN_TYPES: [[['isa_local', 'isa_local'], ['isa_local', 'isa_local']]]
+      FFN_TYPES: [[['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']]]
+      BLOCK: 'TRANSFORMER_BLOCK'
+
+    STAGE3:
+      NUM_MODULES: 4
+      NUM_BRANCHES: 3
+      NUM_BLOCKS: [2, 2, 2]
+      NUM_CHANNELS: [32, 64, 128]
+      NUM_HEADS: [1, 2, 4]
+      NUM_MLP_RATIOS: [4, 4, 4]
+      NUM_RESOLUTIONS: [[56, 56], [28, 28], [14, 14]]
+      NUM_WINDOW_SIZES: [7, 7, 7]
+      ATTN_TYPES: [[['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local']],
+                   [['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local']],
+                   [['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local']],
+                   [['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local']]]
+      FFN_TYPES: [[['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']],
+                  [['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']],
+                  [['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']],
+                  [['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']]]
+      BLOCK: 'TRANSFORMER_BLOCK'
+
+    STAGE4:
+      NUM_MODULES: 2
+      NUM_BRANCHES: 4
+      NUM_BLOCKS: [2, 2, 2, 2]
+      NUM_CHANNELS: [32, 64, 128, 256]
+      NUM_HEADS: [1, 2, 4, 8]
+      NUM_MLP_RATIOS: [4, 4, 4, 4]
+      NUM_RESOLUTIONS: [[56, 56], [28, 28], [14, 14], [7, 7]]
+      NUM_WINDOW_SIZES: [7, 7, 7, 7]
+      ATTN_TYPES: [[['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local']],
+                   [['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local'], ['isa_local', 'isa_local']]]
+      FFN_TYPES: [[['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']],
+                  [['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp'], ['conv_mlp', 'conv_mlp']]]
+      BLOCK: 'TRANSFORMER_BLOCK'

@@ -1,0 +1,11 @@
+MODEL:
+  TYPE: deit
+  NAME: deit_small_patch16_224
+  DEIT:
+    PATCH_SIZE: 16
+    EMBED_DIM: 384
+    DEPTHS: 12
+    NUM_HEADS: 6
+    MLP_RATIO: 4
+    QKV_BIAS: True
+    DROP_PATH_RATE: 0.3
