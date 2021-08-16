@@ -9,18 +9,6 @@ This is the official implementation of [High-Resolution Transformer (HRT)](). We
 ![teaser](./cls/figures/HRT_arch5.png)
 
 
-## Classification
-
-
-#### Results on ImageNet-1K
-
-| Backbone | acc@1 | acc@5 | #params | FLOPs | ckpt | log | script |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| HRT-T | 78.6% | 94.2% | 8.0M | 1.83G |[ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj1UXGB63dBVVOuLO?e=ZLOY7r) | [log](https://1drv.ms/t/s!Ai-PFrdirDvwj1S0MH9FzWCwzzxE?e=6p1Q3X) | [script](./cls/configs/hrt/hrt_tiny.yaml)
-| HRT-S | 81.2% | 95.6% | 13.5M | 3.56G |[ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj1cc3tSp4kIKI_JH?e=bHW7xj) | [log](https://1drv.ms/t/s!Ai-PFrdirDvwj1l2RxNkcb6lmGF3?e=hZ9A1K) | [script](./cls/configs/hrt/hrt_small.yaml)
-| HRT-B | 82.8% | 96.3% | 50.3M | 13.71G |[ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj1iNZngTF7PEyik9?e=fv8CG6) | [log](https://1drv.ms/t/s!Ai-PFrdirDvwj1aBKjc1mKQCkwen?e=spYZOe) | [script](./cls/configs/hrt/hrt_base.yaml) |
-
-
 ## Pose estimation
 
 ### 2d Human Pose Estimation
@@ -87,6 +75,19 @@ OCRNet | HRT-S | 7x7 | Train | Val | 150000 | 8 | Yes | 44.0 | 45.1 | [log](http
 OCRNet | HRT-B | 7x7 | Train | Val | 150000 | 8 | Yes | 46.3 | 47.6 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwj265qyyZ74PKjfqm?e=Cj7TGl) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj3epNJ-QFF33tZtr?e=df3fQk) |[script](./seg/scripts/ade20k/hrt/run_hrt_base_ocr_v2_ohem.sh) |
 OCRNet | HRT-B | 13x13 | Train | Val | 150000 | 8 | Yes | 48.7 | 50.0 | [log](https://1drv.ms/u/s!Ai-PFrdirDvwkAjmpl5jj0sXz2v-?e=sfhyI4) | [ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj3oTs_gVPzFDjdyU?e=yjGRKz)|[script](./seg/scripts/ade20k/hrt/run_hrt_base_ocr_v2_ohem_w13.sh) | 
 OCRNet | HRT-B | 15x15 | Train | Val | 150000 | 8 | Yes | - | - | - | - | - | 
+
+
+## Classification
+
+
+#### Results on ImageNet-1K
+
+| Backbone | acc@1 | acc@5 | #params | FLOPs | ckpt | log | script |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| HRT-T | 78.6% | 94.2% | 8.0M | 1.83G |[ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj1UXGB63dBVVOuLO?e=ZLOY7r) | [log](https://1drv.ms/t/s!Ai-PFrdirDvwj1S0MH9FzWCwzzxE?e=6p1Q3X) | [script](./cls/configs/hrt/hrt_tiny.yaml)
+| HRT-S | 81.2% | 95.6% | 13.5M | 3.56G |[ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj1cc3tSp4kIKI_JH?e=bHW7xj) | [log](https://1drv.ms/t/s!Ai-PFrdirDvwj1l2RxNkcb6lmGF3?e=hZ9A1K) | [script](./cls/configs/hrt/hrt_small.yaml)
+| HRT-B | 82.8% | 96.3% | 50.3M | 13.71G |[ckpt](https://1drv.ms/u/s!Ai-PFrdirDvwj1iNZngTF7PEyik9?e=fv8CG6) | [log](https://1drv.ms/t/s!Ai-PFrdirDvwj1aBKjc1mKQCkwen?e=spYZOe) | [script](./cls/configs/hrt/hrt_base.yaml) |
+
 
 ## Citation
 
