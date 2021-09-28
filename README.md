@@ -1,4 +1,4 @@
-# High-Resolution Transformer for Dense Prediction
+# High-Resolution Transformer for Dense Prediction, NeurIPS 2021
 
 
 ## Introduction
