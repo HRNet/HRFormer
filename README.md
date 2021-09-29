@@ -94,7 +94,7 @@ OCRNet | HRT-B | 15x15 | Train | Val | 150000 | 8 | Yes | - | - | - | - | - |
 If you find this project useful in your research, please consider cite:
 
 ```
-@article{YuanFHZCW21,
+@article{YuanFHLZCW21,
   title={HRT: High-Resolution Transformer for Dense Prediction},
   author={Yuhui Yuan and Rao Fu and Lang Huang and Weihong Lin and Chao Zhang and Xilin Chen and Jingdong Wang},
   booktitle={NeurIPS},
