@@ -96,8 +96,8 @@ If you find this project useful in your research, please consider cite:
 ```
 @article{YuanFHZCW21,
   title={HRT: High-Resolution Transformer for Dense Prediction},
-  author={Yuhui Yuan and Rao Fu and Lang Huang and Chao Zhang and Xilin Chen and Jingdong Wang},
-  booktitle={arXiv},
+  author={Yuhui Yuan and Rao Fu and Lang Huang and Weihong Lin and Chao Zhang and Xilin Chen and Jingdong Wang},
+  booktitle={NeurIPS},
   year={2021}
 }
 ```
