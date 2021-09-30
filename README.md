@@ -8,7 +8,7 @@ This is the official implementation of [High-Resolution Transformer (HRT)](). We
 
 ![teaser](./cls/figures/HRFormer.png)
 
-- The HRFormer Unit:
+- The HRFormer Unit (trans. unit):
 
 ![teaser](./cls/figures/HRFormerUnit.png)
 
