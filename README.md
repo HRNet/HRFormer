@@ -6,7 +6,7 @@ This is the official implementation of [High-Resolution Transformer (HRT)](). We
 
 - The High-Resolution Transformer architecture:
 
-![teaser](./cls/figures/HRT_arch5.png)
+![teaser](./cls/figures/HRFormer.png)
 
 
 ## Pose estimation
