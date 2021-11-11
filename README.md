@@ -1,6 +1,8 @@
 # HRFormer: High-Resolution Transformer for Dense Prediction, NeurIPS 2021
 
 
+<img src='imgs/HRFormer-20-fps.avi' align="center" width=1024>
+
 ## Introduction
 This is the official implementation of [High-Resolution Transformer (HRFormer)](https://arxiv.org/pdf/2110.09408.pdf). We present a High-Resolution Transformer (HRFormer) that learns high-resolution representations for dense prediction tasks, in contrast to the original Vision Transformer that produces low-resolution representations and has high memory and computational cost. We take advantage of the multi-resolution parallel design introduced in high-resolution convolutional networks (HRNet), along with local-window self-attention that performs self-attention over small non-overlapping image windows, for improving the memory and computation efficiency. In addition, we introduce a convolution into the FFN to exchange information across the disconnected image windows. We demonstrate the effectiveness of the High-Resolution Transformer on human pose estimation and semantic segmentation tasks.
 
