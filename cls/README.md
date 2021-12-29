@@ -143,19 +143,19 @@ For example, to train `HRT` with 8 GPU on a single node for 300 epochs, run:
 `HRT-Tiny`:
 
 ```bash
-bash run_dish.sh hrt/hrt_tiny.yaml <imagenet-path>
+bash run_dist.sh hrt/hrt_tiny <imagenet-path>
 ```
 
 `HRT-Small`:
 
 ```bash
-bash run_dish.sh hrt/hrt_small.yaml <imagenet-path>
+bash run_dist.sh hrt/hrt_small <imagenet-path>
 ```
 
 `HRT-Base`:
 
 ```bash
-bash run_dish.sh hrt/hrt_base.yaml <imagenet-path>
+bash run_dist.sh hrt/hrt_base <imagenet-path>
 ```
 ### Number of Parameters and FLOPs
 
